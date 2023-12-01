@@ -9,4 +9,12 @@ public class Immagine extends Media{
         super(title);
         this.brigthness = brigthness;
     }
+
+    @Override
+    public String toString() {
+        return "Immagine{" +
+                "brigthness=" + brigthness +
+                ", title='" + title + '\'' +
+                '}';
+    }
 }

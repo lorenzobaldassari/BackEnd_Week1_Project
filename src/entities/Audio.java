@@ -11,4 +11,14 @@ public class Audio extends Media{
     }
 
     //methods
+
+
+    @Override
+    public String toString() {
+        return "Audio{" +
+                "volume=" + volume +
+                ", length=" + length +
+                ", title='" + title + '\'' +
+                '}';
+    }
 }

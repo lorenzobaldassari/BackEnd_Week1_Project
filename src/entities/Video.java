@@ -12,4 +12,14 @@ public class Video extends Media {
         this.length = length;
         this.brigthness = brigthness;
     }
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "volume=" + volume +
+                ", length=" + length +
+                ", brigthness=" + brigthness +
+                ", title='" + title + '\'' +
+                '}';
+    }
 }
