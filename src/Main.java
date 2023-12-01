@@ -144,7 +144,7 @@ public class Main {
                     Scanner videoBrightnessInput = new Scanner(System.in);
                     int videoBrightness = 0;
                     do {
-                        System.out.println("inserisci la lumonista' da 1 a 10'");
+                        System.out.println("inserisci la luminosita' da 1 a 10'");
                         try {
                             videoBrightness= Integer.parseInt(videoBrightnessInput.nextLine());
 
