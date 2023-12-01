@@ -30,34 +30,43 @@ public class Main {
                 }
                 case "audio": {
                     System.out.println("Hai scelto audio");
+
                     Scanner audioTitleInput = new Scanner(System.in);
                     System.out.println("insersci il titolo");
                     String audioTitle = audioTitleInput.nextLine();
+
                     Scanner audiolengthInput = new Scanner(System.in);
                     System.out.println("inserisci la durata'");
                     int audioLength = Integer.parseInt(audiolengthInput.nextLine());
-                    System.out.println("inserisci il volume'");
+
                     Scanner audioVolumeInput = new Scanner(System.in);
+                    System.out.println("inserisci il volume'");
                     int audioVolume = Integer.parseInt(audioVolumeInput.nextLine());
-                    Audio audio =new Audio(audioTitle,audioVolume,audioVolume);
+
+                    Audio audio =new Audio(audioTitle,audioVolume,audioLength);
                     multimedia[i]=audio;
                     break;
                 }
                 case "video": {
                     System.out.println("Hai scelto video");
+
                     Scanner videoTitleInput = new Scanner(System.in);
                     System.out.println("insersci il titolo");
                     String videoTitle = videoTitleInput.nextLine();
+
                     Scanner videolengthInput = new Scanner(System.in);
                     System.out.println("inserisci la durata'");
                     int videoLength = Integer.parseInt(videolengthInput.nextLine());
+
                     System.out.println("inserisci il volume'");
                     Scanner videoVolumeInput = new Scanner(System.in);
                     int videoVolume = Integer.parseInt(videoVolumeInput.nextLine());
+
                     Scanner videoBrightnessInput = new Scanner(System.in);
                     System.out.println("inserisci la lumnosita'");
                     int videoBrightness = Integer.parseInt(videoBrightnessInput.nextLine());
-                    Video video =new Video(videoTitle,videoVolume,videoVolume,videoBrightness);
+
+                    Video video =new Video(videoTitle,videoVolume,videoLength,videoBrightness);
                     multimedia[i]=video;
                     break;
                 }
