@@ -1,6 +1,6 @@
 package entities;
 
-public abstract class Media {
+public abstract class Media  {
 
     public String title;
 
@@ -17,4 +17,6 @@ public abstract class Media {
                 "title='" + title + '\'' +
                 '}';
     }
+
+
 }
