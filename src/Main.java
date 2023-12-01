@@ -173,13 +173,13 @@ public class Main {
 
         //inizio del input per decidere cosa mostrare
 
-
-        while(1>0) {
+        int i=0;
+        while(i==0) {
         Scanner input = new Scanner(System.in);
         System.out.println("Scegli cosa mostrare");
         int choose = Integer.parseInt(input.nextLine());
             if(choose==0){
-                break;
+                i++;
             }else{
                 switch (choose) {
                     case 1: {
